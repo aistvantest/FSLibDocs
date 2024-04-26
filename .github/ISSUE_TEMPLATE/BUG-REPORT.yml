@@ -15,23 +15,6 @@ body:
 
 - type: dropdown
   attributes:
-    label: Installation method
-    description: How / Where was PowerToys installed from?
-    multiple: true
-    options:
-      - GitHub
-      - PowerToys auto-update
-      - Microsoft Store
-      - WinGet
-      - Chocolatey
-      - Scoop
-      - Dev build in Visual Studio
-      - Other (please specify in "Steps to Reproduce")
-  validations:
-    required: true
-
-- type: dropdown
-  attributes:
     label: Problémás modulok
     description: Melyik modulokkal volt probléma?
     multiple: true
