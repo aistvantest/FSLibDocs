@@ -1,17 +1,15 @@
-name: "🕷️ Bug report"
-description: Report errors or unexpected behavior
+name: "🕷️ Hiba jelentés"
+description: Hibák vagy váratlan viselkedés jelentése
 labels:
-- Issue-Bug
-- Needs-Triage
+- bug
 body:
 - type: markdown
   attributes:
     value: Please make sure to [search for existing issues](https://github.com/microsoft/PowerToys/issues) before filing a new one!
 - type: input
   attributes:
-    label: Microsoft PowerToys version
-    placeholder: 0.70.0
-    description: Hover over system tray icon or look at Settings
+    label: Konverter verzió
+    placeholder: 24.1.1
   validations:
     required: true
 
@@ -34,81 +32,49 @@ body:
 
 - type: dropdown
   attributes:
-    label: Running as admin
-    description: Are you running PowerToys as Admin?
-    options:
-      - "Yes"
-      - "No"
-
-- type: dropdown
-  attributes:
-    label: Area(s) with issue?
-    description: What things had an issue? Check all that apply.
+    label: Problémás modulok
+    description: Melyik modulokkal volt probléma?
     multiple: true
     options:
-      - General
-      - Always on Top
-      - Awake
-      - ColorPicker
-      - Command not found
-      - Crop and Lock
-      - Environment Variables
-      - FancyZones
-      - FancyZones Editor 
-      - File Locksmith 
-      - "File Explorer: Preview Pane"
-      - "File Explorer: Thumbnail preview"
-      - Hosts File Editor
-      - Image Resizer
-      - Installer
-      - Keyboard Manager
-      - Mouse Utilities
-      - Mouse Without Borders
-      - Paste as Plain Text
-      - Peek
-      - PowerRename
-      - PowerToys Run
-      - Quick Accent
-      - Registry Preview
-      - Screen ruler
-      - Settings
-      - Shortcut Guide
-      - System tray interaction
-      - TextExtractor
-      - Video Conference Mute
-      - Welcome / PowerToys Tour window
+      - Általános
+      - Bank
+      - OSA kimenő számla feldolgozás 
+      - OSA bejövő számla feldolgozás
+      - OPG pénztárgép adat feldolgozás
+      - Adóhatósági XML-fájl feldolgozás
+      - Számlázz.hu CSV-fájl feldolgozás
   validations:
     required: true
 
 - type: textarea
   attributes:
-    label: Steps to reproduce
-    description: We highly suggest including screenshots and a bug report log (System tray > Report bug).
-    placeholder: Having detailed steps helps us reproduce the bug. 
+    label: A reprodulálás lépései
+    description: Javasolt kép, log fájl csatolása.
+    placeholder: A hiba reprodukálásának részletes lépései
   validations:
     required: true
 
 - type: textarea
   attributes:
-    label: ✔️ Expected Behavior
-    placeholder: What were you expecting?
+    label: ✔️ Várt viselkedés
+    placeholder: Várt viselkedés leíársa.
   validations:
     required: false
 
 - type: textarea
   attributes:
-    label: ❌ Actual Behavior
-    placeholder: What happened instead?
+    label: ❌ Aktuális viselkedés
+    placeholder: Aktuális viselkedés leírása
   validations:
     required: false
 
 - type: textarea
   attributes:
-    label: Other Software
-    description: If you're reporting a bug about our interaction with other software, what software? What versions?
+    label: Egyéb információ
+    description: Melyik könyvelő programba történt a feladás?
     placeholder: |
-      vim 8.2 (inside WSL)
-      OpenSSH_for_Windows_8.1p1
-      My Cool Application v0.3 (include a code snippet if it would help!)
+      UJEGYKE 2024.01
+      UJEGYSZ 2024.01
+      WUJEGYKE 2024.01
   validations:
     required: false
